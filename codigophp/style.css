@@ -1,0 +1,160 @@
+
+:root{
+  --color-oscuro: #1C1E24;
+  --color-claro: #F5F4ED;
+  --color-principal: #596F9B;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;    
+}
+body{
+  background-color: var(--color-claro); 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    padding: 60px;
+    text-align: center;
+    background: var(--color-principal);  
+    color:var(--color-claro); 
+    font-size: 30px;
+    
+}
+/*navbar*/
+nav{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color-oscuro);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: var(--color-claro);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: var(--color-principal);
+  }
+
+  /*aside*/
+  aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: var(--color-claro);
+  }
+
+  /*section*/
+  section {
+    display: block;
+  }
+
+  /*article*/
+  article{
+    margin: 0;
+    padding: 5px;
+    background-color: var(--color-claro);
+    display: block;
+  }
+
+  /*tabla*/
+#tabla{
+    padding: 15px;
+    font-family: monospace;
+   
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
+table{
+
+  position: relative;
+  font-family: monospace;   
+  border: 1px solid black;
+  border-collapse: collapse;
+ 
+  width: fit-content;
+}
+th, td {
+ 
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 3px;
+}
+th{
+
+  background-color: var(--color-principal);
+  color:var(--color-claro);
+}
+.botones_tabla {
+  background-color: transparent;
+	border-color:transparent;
+  
+}
+img.boton{
+  max-width: 20px;
+  max-height: 20px;
+}
+
+/*footer*/
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-oscuro);
+  color: white;
+  text-align:start;
+  padding-left: 10px;
+  font-size: 14px;
+}
+footer > p>a{
+  color: var(--color-claro)
+}
+
+/*formularios de acceso*/
+#formularios {
+	display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 100%;
+  margin: 5%;
+}
+.acceso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 20%;
+}
+
+.formulario_acceso {
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.boton_acceso {  
+  max-width: 40%;
+}
